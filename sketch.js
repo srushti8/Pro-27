@@ -19,16 +19,16 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	roof = new Roof (400,200,600,40);
-	ground = new Roof (400,700,800,10);
-	bob1 = new Bob (200,300,100);
-	bob2 = new Bob (300,300,100);
-	bob3 = new Bob (400,300,100);
-	bob4 = new Bob (500,300,100);
-	bob5 = new Bob (600,300,100);
+	roof = new Roof(400,200,600,40);
+	ground = new Roof(400,700,800,10);
+	bob1 = new Bob(200,300,100);
+	bob2 = new Bob(300,300,100);
+	bob3 = new Bob(400,300,100);
+	bob4 = new Bob(500,300,100);
+	bob5 = new Bob(600,300,100);
 
-	rope1 = new Rope (bob1.body,roof.body,-100,0);
-	World.add(world, rope1)
+	rope1 = new Rope(bob1.body,roof.body,-100,0);
+	//World.add(world, rope1)
 
 	Engine.run(engine);
   
@@ -45,6 +45,7 @@ function draw() {
   bob3.display();
   bob4.display();
   bob5.display();
+  rope1.display();
 
 
   drawSprites();

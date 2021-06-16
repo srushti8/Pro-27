@@ -3,8 +3,8 @@ class Rope {
         this.offsetX = this.offsetX;
         this.offsetY = this.offsetY;
         var options={ 
-            bodyA: body1
-            bodyB: body2
+            bodyA:body1
+            bodyB:body2
             pointB: {x:this.offsetX, y:this.offsetY}
         }
 
@@ -12,18 +12,19 @@ class Rope {
         World.add(world,this.rope)
     }
     display(){
-        var point1 = this.rope.bodyA.position;
-        var point1 = this.rope.bodyA.position;
+        var pointA=this.rope.bodyA.position;
+		var pointB=this.rope.bodyB.position;
 
         strokeWeight(2)
 
-        var Anchor1X = point1.x;
-        var Anchor1Y = point1.y;
+        var Anchor1X=pointA.x
+		var Anchor1Y=pointA.y
 
-        var Anchor2X = point2.x + this.offsetX
-        var Anchor2Y = point2.y + this.offsetY
+        var Anchor2X=pointB.x+this.offsetX
+		var Anchor2Y=pointB.y+this.offsetY
 
         line(Anchor1X,Anchor1Y,Anchor2X,Anchor2Y);
     }
+}
     
             

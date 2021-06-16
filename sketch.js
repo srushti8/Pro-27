@@ -4,7 +4,7 @@ const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 
-var roof, ground;
+var roof, ground, rope1;
 var bob1, bob2, bob3, bob4, bob5;
 
 function preload()

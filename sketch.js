@@ -27,8 +27,8 @@ function setup() {
 	bob4 = new Bob(500,300,100);
 	bob5 = new Bob(600,300,100);
 
-	rope1 = new Rope(bob1.body,roof.body,-100,0);
-	//World.add(world, rope1)
+	rope1 = new Rope(bob1.body,roof.body,-100*2,0);
+	rope2 = new Rope(bob2.body,roof.body,-50*2,0);
 
 	Engine.run(engine);
   
@@ -36,7 +36,7 @@ function setup() {
 
 function draw() {
   rectMode(CENTER);
-  background(0);
+  background(172,244,247);
   
   roof.display();
   ground.display();
@@ -46,6 +46,7 @@ function draw() {
   bob4.display();
   bob5.display();
   rope1.display();
+  rope2.display();
 
 
   drawSprites();

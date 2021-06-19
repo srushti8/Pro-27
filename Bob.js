@@ -16,7 +16,8 @@ class Bob {
   var paperpos=this.body.position; 
   push(); 
   translate(paperpos.x, paperpos.y); 
-  fill("pink"); 
+  fill(255,60,117); 
+  ellipse(0,0,this.r, this.r);
   pop(); 
   } 
 }
